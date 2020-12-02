@@ -85,14 +85,55 @@
             </p>
             <p>
                 ssh-keygen -t rsa -b 4096 -C "email_registered_github"
-            </p>            
+            </p> 
+            <p>
+                Generating public/private rsa key pair.
+            </p>
+            <img src="../images/git_ssh1.png" class="img-responsive" alt="git_ssh1_image">    
+                
+            <p>
+            For all this statements in the image just press enter. 
+            at the end you will get the key generated.
+            </p>           
+
+            <p>
+                Now the keys are generated, you can check it I have mentioned above how to check it.</p>
+            <p>    
+                Now go login to github account in browser and go on profile and settings in that.
+                It will open the list of menu, go to SSH and GPG key in that go to SSH key you will 
+                see something like in the image click on 
+                new SSH key it will open window where we need to paste 
+                the key contents which are in the file id_rsa.pub
+            </p>
+            <p>    
+                Before that go to terminal and go to home directory and enter below commands on terminal.
+
+            </p>
+            <p>
+                cd .ssh
+            </p>
+            <p>
+                ls -la
+            </p>
+            <p>
+                vim id_rsa.pub copy then contents and paste it in the browser window by clicking on add new key. 
+            </p>
+            <img src="../images/git_ssh2.png" class="img-responsive" alt="git_ssh_key_on_github">
             <!-- <a href="/projects.html" class="link secondary-link">PLAY</a> -->
-           
+           <p>
+            And add the key. It’s done now to carry on your git operations but
+             using SSH url has definitely reduced 
+            your headache of entering username and password each time.
+           </p>
+
 
         </div>      
     </section>
 
-    
+    <div class="container back-container">
+      <a href="/blogs.html" class="link back-link">         
+        <i class="fas fa-angle-left"></i>  Back</a>
+    </div>
 
     <footer>
         <div>Kiran Mate</div>
