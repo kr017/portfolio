@@ -235,7 +235,7 @@ li{
 }
 
 .img-responsive{
-    max-width: 280px;
+    max-width: 70%;
     display: block;
     margin: auto;
 }
