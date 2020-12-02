@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Kiran's Component Library</h1>
+
+    <p>While attending NeoG Camp, I'm making a library </p>
+
+    <hr>
+
+    <h2>@Typography</h2>
+
+    <p>Paragraph tag</p>
+
+    <small>small tag</small>
+
+    <hr>
+
+    <h2>@Container</h2>
+
+    <h3>@Fluid Container</h3>
+    <div class="container">This is fluid container and will take full width of page (with some margin)</div>
+
+
+    <h3>@Center Container</h3>
+    <div class="container-center">This container will be centered. It will go till </div>
+
+    <hr>
+
+    <h2>@Links</h2>
+
+    <!-- which you want user to click (tweet) -->
+    <a href="#" class="link primary-link">Primary Link</a>
+
+    <!-- its fine if user clicks (Edit profile) -->
+    <a href="#" class="link secondary-link">Secondary Link</a>
+
+    <hr>
+
+    <h2>@Lists</h2>
+
+
+    <h3>Unordered List</h3>
+
+    <p>this will have bullets</p>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+
+    <p>this will not have bullets</p>
+    <ul class="list-non-bullet">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+
+    <h3>Unordered Inline List</h3>
+
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline One</li>
+        <li class="list-item-inline">Inline Two</li>
+        <li class="list-item-inline">Inline Three</li>
+    </ul>
+
+    <h3>Reverse Ordered List</h3>
+
+    <ol reversed>
+        <li>Pizza</li>
+        <li>Pasta</li>
+        <li>Sandwich</li>
+    </ol>
+
+    <hr>
+
+    <h2>@Nav</h2>
+
+    <nav class="navigation">
+        <div class="nav-brand">I'm Kiran</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline link-active">
+                <a href="#" class="link ">Home</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a href="#" class="link">Projects</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a href="#" class="link">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2>@Header</h2>
+    <header class="hero">
+        <img class="hero-image" src="./images/hero2.svg" alt="">
+        <h2 class="hero-heading">
+            Kiran the 
+        <span class="heading-inverted">web developer</span> 
+        </h2>
+    </header>
+
+    <!-- unDraw.com -->
+
+    <hr>
+    <h2>@Section</h2>
+
+
+    <section class="section">
+        <div class="container container-center">
+            <h3>White Section</h3>
+            <p>With white background</p>
+        </div>
+        
+    </section>
+
+    <section class="section off-white-section">
+        <div class="container container-center ">
+            <h3>Off White Section</h3>
+            <p>with gray background</p>
+        </div>
+       
+    </section>
+
+    <hr>
+
+    <h2>@Footer</h2>
+    <footer>
+        <div>footer section text .....</div>
+        <ul class="social-links">
+            <li class="list-non-bullet list-item-inline"><a href="" class="link"> github </a> </li>
+            <li class="list-non-bullet list-item-inline"><a href="" class="link"> twitter </a> </li>
+            <li class="list-non-bullet list-item-inline"><a href="" class="link"> facebook </a> </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
+<!-- read about meta tag  -->
+
+
+<!-- 
+    which takes row (entire block) =>block element (p, h3)
+    which takes its own place only => inline element (a)
+ -->

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Mate | Blogs</title>
+    <link rel="stylesheet" href="../lib/styles.css">
+    <link href="../fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-brand">I'm Kiran</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline ">
+                <a href="/index.html" class="link ">Home</a>
+            </li>
+
+            <li class="list-item-inline ">
+                <a href="/projects.html" class="link">Projects</a>
+            </li>
+
+            <li class="list-item-inline link-active">
+                <a href="/blogs.html" class="link">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container back-container">
+      <a href="/blogs.html" class="link back-link">         
+        <i class="fas fa-angle-left"></i>  Back</a>
+    </div>
+
+    <header class="hero">
+        <img class="hero-image" src="./images/blogs.svg" alt="">
+        <h2 class="hero-heading">
+            Git: Switch From HTTPS To SSH
+        </h2>
+        <small class="blog-publish-time">Jun 1st, 2020 12:27 PM</small>
+    </header>
+
+    
+
+    <section class="section off-white-section">
+        <div class="container ">
+            <p>You must have always seen two options while cloning 
+                remote repository one is HTTPS and other SSH.
+                 In this post I'm discussing the second topic. 
+                 and HTTPS is what we all use frequently. 
+                 and while pushing the changes on the remote repository 
+                 you must be getting annoyed since it asks for username and
+                  password every time,
+                 if so it’s the perfect time to switch to use SSH url.</p>
+            <p>
+                So what is SSH?
+            </p>
+            <p>    
+                An SSH key is an alternate way to identify yourself that doesn't 
+                require you to enter your username and password every time.
+                 SSH keys come in pairs, a public key that gets shared with services like GitHub,
+                 Gitlab and a private key that is stored only on your computer.
+                
+                First all check whether SSH is already present or not.
+                
+                ls -al ~/.ssh
+                
+                If it gives list of files like this  
+            </p>
+
+            <p>
+                <ul>
+                    <li >id_rsa.pub</li>
+                    <li> id_ecdsa.pub</li> 
+                    <li>Id_ed25519.pub</li>
+                </ul>
+            </p>
+
+            <p>
+                It means the key is already generated.
+                if not let's see the steps to generate the key.
+            </p>
+            <p>
+                on terminal enter:
+            </p>
+            <p>
+                ssh-keygen -t rsa -b 4096 -C "email_registered_github"
+            </p>            
+            <!-- <a href="/projects.html" class="link secondary-link">PLAY</a> -->
+           
+
+        </div>      
+    </section>
+
+    
+
+    <footer>
+        <div>Kiran Mate</div>
+       
+        <ul class="social-links">
+            
+            
+            <li class="list-non-bullet list-item-inline">
+                <a href="https://github.com/kr017" class="link"><i class="fab fa-github"></i> </a> 
+            </li>
+            
+            <li class="list-non-bullet list-item-inline">
+                <a href="https://twitter.com/KiranMate__" class="link"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-non-bullet list-item-inline">
+                <a href="https://www.linkedin.com/in/kiran-mate-a2a251154/" class="link"> <i class="fab fa-linkedin"></i> </a>
+             </li>
+        
+        </ul>
+    </footer>
+
+</body>
+</html>
