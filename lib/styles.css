@@ -40,7 +40,7 @@
 
 
 body{
-    font-family: 'Montserrat', sans-serif;;  
+    font-family: 'Montserrat', sans-serif;
     background-color:var(--body-dark);
     
     width: 100%;
@@ -95,10 +95,11 @@ hr{
 }
 
 
-/* list */c8dad3
+/* listc8dad3 */
 
 .list-non-bullet{
     list-style: none;
+    padding:0px;
 }
 
 
@@ -116,6 +117,10 @@ hr{
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
+}
+
+.nav-link{
+    padding: 0px;
 }
 
 .navigation .nav-brand{
