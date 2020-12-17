@@ -245,3 +245,6 @@ li{
     margin: auto;
 }
 
+a{
+    color: var(--social-link-color);
+}
